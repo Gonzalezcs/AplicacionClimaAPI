@@ -41,15 +41,16 @@ class MainActivity : AppCompatActivity() {
             "clear-day" -> R.drawable.clear_day
             "clear-night" -> R.drawable.clear_night
             "rain" -> R.drawable.rain
-            "snow" ->
-            "sleet"
-            "wind"
-            "fog"
-            "cloudy"
-            "partly-cloudy-day"
-            "partly-cloudy-nigth"
-            "hail"
-            "thunderstorm"
+            "snow" -> R.drawable.snow
+            "sleet" -> R.drawable.sleet
+            "wind" -> R.drawable.wind
+            "fog" -> R.drawable.fog
+            "cloudy" -> R.drawable.cloudy
+            "partly-cloudy-day" -> R.drawable.partly_cloudy_day
+            "partly-cloudy-nigth" -> R.drawable.partly_cloudy_night
+            "hail" -> R.drawable.hail
+            "thunderstorm" -> R.drawable.thunderstorm
+            
         }
     }
 }
