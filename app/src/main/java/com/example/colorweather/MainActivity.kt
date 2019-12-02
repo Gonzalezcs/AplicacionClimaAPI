@@ -29,9 +29,27 @@ class MainActivity : AppCompatActivity() {
                 descriptionTextView!!.setText("${response.body()?.currently?.summary}")
                 minTempTextView!!.setText("${response.body()?.currently?.temperature?.roundToInt()}F")
                 precipProbTextView!!.setText("${response.body()?.currently?.precipProbability?.roundToInt()}%")
+                iconImageView!!.setImageResource()
 
             }
 
         })
+    }
+
+    private fun getWeatherIcon(iconString: String) : Int {
+        return when(iconString){
+            "clear-day" -> R.drawable.clear_day
+            "clear-night" -> R.drawable.clear_night
+            "rain" -> R.drawable.rain
+            "snow" ->
+            "sleet"
+            "wind"
+            "fog"
+            "cloudy"
+            "partly-cloudy-day"
+            "partly-cloudy-nigth"
+            "hail"
+            "thunderstorm"
+        }
     }
 }
