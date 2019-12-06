@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 descriptionTextView!!.setText("${response.body()?.currently?.summary}")
                 minTempTextView!!.setText("${response.body()?.currently?.temperature?.roundToInt()}F")
                 precipProbTextView!!.setText("${response.body()?.currently?.precipProbability?.roundToInt()}%")
-                iconImageView!!.setImageResource()
+                //iconImageView!!.setImageResource()
 
             }
 
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             "partly-cloudy-nigth" -> R.drawable.partly_cloudy_night
             "hail" -> R.drawable.hail
             "thunderstorm" -> R.drawable.thunderstorm
-            
+            else -> R.drawable.clear_day
         }
     }
 }
