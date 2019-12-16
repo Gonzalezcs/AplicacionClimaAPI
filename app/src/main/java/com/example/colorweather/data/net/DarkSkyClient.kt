@@ -1,10 +1,13 @@
 package com.example.colorweather.data.net
 
+
 import com.example.colorweather.data.model.Weather
 import okhttp3.OkHttpClient
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+
+
 
 object DarkSkyClient {
 
@@ -23,6 +26,8 @@ object DarkSkyClient {
             .build()
         darkSkyApi = retrofit.create(DarkSkyApi::class.java)
     }
+
+
 
     fun getWeather(latitude: String = coordinates.first, longitude: String = coordinates.second): Call<Weather> {
         return darkSkyApi.getWeather(API_KEY,latitude,longitude)
